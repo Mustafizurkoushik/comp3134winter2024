@@ -1,0 +1,28 @@
+root@ubuntu-s-1vcpu-1gb-tor1-01:~# ping google.com
+PING google.com (142.251.32.78) 56(84) bytes of data.
+64 bytes from yyz12s07-in-f14.1e100.net (142.251.32.78): icmp_seq=1 ttl=120 time=1.82 ms
+64 bytes from yyz12s07-in-f14.1e100.net (142.251.32.78): icmp_seq=2 ttl=120 time=0.921 ms
+64 bytes from yyz12s07-in-f14.1e100.net (142.251.32.78): icmp_seq=3 ttl=120 time=1.05 ms
+64 bytes from yyz12s07-in-f14.1e100.net (142.251.32.78): icmp_seq=4 ttl=120 time=0.970 ms
+64 bytes from yyz12s07-in-f14.1e100.net (142.251.32.78): icmp_seq=5 ttl=120 time=0.987 ms
+64 bytes from yyz12s07-in-f14.1e100.net (142.251.32.78): icmp_seq=6 ttl=120 time=0.980 ms
+64 bytes from yyz12s07-in-f14.1e100.net (142.251.32.78): icmp_seq=7 ttl=120 time=0.970 ms
+64 bytes from yyz12s07-in-f14.1e100.net (142.251.32.78): icmp_seq=8 ttl=120 time=0.953 ms
+64 bytes from yyz12s07-in-f14.1e100.net (142.251.32.78): icmp_seq=9 ttl=120 time=1.22 ms
+^C
+--- google.com ping statistics ---
+9 packets transmitted, 9 received, 0% packet loss, time 8014ms
+rtt min/avg/max/mdev = 0.921/1.096/1.817/0.267 ms
+
+root@ubuntu-s-1vcpu-1gb-tor1-01:~# ping google.com -w 5
+PING google.com (142.251.32.78) 56(84) bytes of data.
+64 bytes from yyz12s07-in-f14.1e100.net (142.251.32.78): icmp_seq=1 ttl=120 time=2.03 ms
+64 bytes from yyz12s07-in-f14.1e100.net (142.251.32.78): icmp_seq=2 ttl=120 time=1.00 ms
+64 bytes from yyz12s07-in-f14.1e100.net (142.251.32.78): icmp_seq=3 ttl=120 time=0.988 ms
+64 bytes from yyz12s07-in-f14.1e100.net (142.251.32.78): icmp_seq=4 ttl=120 time=1.00 ms
+64 bytes from yyz12s07-in-f14.1e100.net (142.251.32.78): icmp_seq=5 ttl=120 time=1.03 ms
+
+--- google.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4006ms
+rtt min/avg/max/mdev = 0.988/1.211/2.032/0.410 ms
+root@ubuntu-s-1vcpu-1gb-tor1-01:~#
